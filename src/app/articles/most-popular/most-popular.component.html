@@ -1,0 +1,17 @@
+<h3 class="main-title text-white text-center">Most popular articles</h3>
+<hr >
+<div class="row">
+  <div class="col-md-3" *ngFor="let article of articles">
+    <div class="card m-3" style="height: 18rem;">
+      <h6 class="card-header" style="height:70px;">
+        <strong>{{ article.title }}</strong>
+      </h6>
+
+      <div class="card-body">
+        <p class="most-popular-summary" [innerHTML]="article.summary"></p>
+        
+      </div>
+      <div class="card-footer"><a href="{{ article.id }}" class="pull-right"> See more </a></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<h4 class="main-title">Today's pops</h4>
+<hr />
+<div class="row">
+  <div class="col-mb-3" *ngFor="let article of articles">
+    <div class="card ml-2 mt-5" style="height: 18rem;width:18rem;">
+        <!-- <h5 class="card-header" style="overflow:hidden; font-size: 14px;">{{ article.title }}</h5> -->
+      <div class="card-body">
+          <h5 class="card-title" style="overflow:hidden; font-size: 14px;">{{ article.title }}</h5>
+          <hr class="title-line">
+        <p class="today-pops-summary" [innerHTML]="article.summary"></p>
+      </div>
+      <div class="card-footer text">
+        <a href="{{ article.link }}" class="pull-right">See more</a>
+      </div>
+    </div>
+  </div>
+</div>

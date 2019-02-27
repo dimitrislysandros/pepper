@@ -1,1 +1,178 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+/* @import '../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css'; */
+@import '../node_modules/bootswatch/dist/lux/bootstrap.min.css';
+/* @import '../node_modules/font-awesome/css/font-awesome.min.css'; */
+
+@import '../node_modules/alertifyjs/build/css/alertify.min.css';
+@import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import '../node_modules/font-awesome/css/font-awesome.min.css';
+
+* {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+.card-body {
+    overflow: hidden;
+}
+
+.card-header {
+    overflow:hidden; 
+    /* font-size: 14px; */
+    height: 5rem;
+    /* overflow: hidden; */
+}
+
+.card-title {
+    height:80px;
+    overflow: hidden;
+}
+
+.title-line {
+    width: 150px;
+    
+}
+
+.most-popular-summary {        
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    width: 18rem;
+  }
+
+.main-title {
+    text-align: left;
+    margin-left:10px;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.2em;
+    font-family: "Open Sans",Arial, Helvetica, sans-serif !important;
+}
+
+#navigation {
+    background-color: #07689f !important;
+}
+
+#search-button {
+    color: #fff !important;
+    background-color: #000;
+    margin-top: -1.6px !important;
+    height: 40px;
+}
+
+.nav-linemark {
+    border: 3px solid #000;
+    margin: 0 auto;
+    opacity: 0.8;
+    max-width: 100%;
+    background-position: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+*,*:after,*:before {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+  }
+  
+  .cf:before,
+  .cf:after {
+      content:"";
+      display:table;
+  }
+  .cf:after {
+      clear:both;
+  }
+  
+  
+  a,a:visited {
+    color:#020392;
+  }
+  
+.searchform {
+    /* background:#f4f4f4;
+  background:rgba(244,244,244,.79);
+  border: 1px solid #d3d3d3; */
+	left: 50%;
+  padding: 4px 5px;
+  position: absolute;
+	margin: -22px 0 0 -170px;
+	top: 50%;
+  width:40%;
+  /* box-shadow:0 4px 9px rgba(0,0,0,.37); */
+  /* -moz-box-shadow:0 4px 9px rgba(0,0,0,.37); */
+  /* -webkit-box-shadow:0 4px 9px rgba(0,0,0,.37); */
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px
+}
+
+.searchform input, .searchform button {
+	float: left;
+}
+.searchform input {
+	background:#fefefe;
+	border: none;
+	font:12px/12px 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	margin-right: 5px;
+	padding: 10px;
+	width: 50%;
+	box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
+	-moz-box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
+  border-radius: 9px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px
+}
+	.searchform input:focus {
+		outline: none;
+		box-shadow:0 0 4px #0d76be inset;
+		-moz-box-shadow:0 0 4px #0d76be inset;
+		-webkit-box-shadow:0 0 4px #0d76be inset;
+	}
+	.searchform input::-webkit-input-placeholder {
+  	font-style: italic;
+  	line-height: 15px
+	}
+
+	.searchform input:-moz-placeholder {
+	  font-style: italic;
+  	line-height: 15px
+	}
+
+.searchform button {
+	background: rgb(52,173,236);
+	background: -moz-linear-gradient(top, rgba(52,173,236,1) 0%, rgba(38,145,220,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(52,173,236,1)), color-stop(100%,rgba(38,145,220,1)));
+	background: -webkit-linear-gradient(top, rgba(52,173,236,1) 0%,rgba(38,145,220,1) 100%);
+	background: -o-linear-gradient(top, rgba(52,173,236,1) 0%,rgba(38,145,220,1) 100%);
+	background: -ms-linear-gradient(top, rgba(52,173,236,1) 0%,rgba(38,145,220,1) 100%);
+	background: linear-gradient(to bottom, rgba(52,173,236,1) 0%,rgba(38,145,220,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34adec', endColorstr='#2691dc',GradientType=0 );
+	border: none;
+	color:#fff;
+	cursor: pointer;
+	font: 13px/13px 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	padding: 10px;
+	width:10%;
+	box-shadow: 0 0 2px #2692dd inset;
+	-moz-box-shadow: 0 0 2px #2692dd inset;
+	-webkit-box-shadow: 0 0 2px #2692dd inset;
+  border-radius: 9px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+}
+	.searchform button:hover {
+		opacity:.9;
+	}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ArticleService } from './_services/article.service';
 
 @Component({
   selector: 'app-root',

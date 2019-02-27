@@ -1,0 +1,22 @@
+
+<div class="card" style="height: 1000px;" >
+  <h4 class="card-header text-light bg-dark" style="height:70px;">
+    <strong>Newest</strong>
+  </h4>
+
+  <div class="card-body" style="height: 1000px; overflow-y: scroll;">
+    <!-- <div
+      class="list-group pre-scrollable full-height m-1"
+      style="max-height: 1000px;"
+    > -->
+    <ul class="list-group list-group-flush" *ngFor="let article of articles" >
+        <a
+        href="{{ article.link }}"
+        class="list-group-item list-group-item-action"
+      >
+        {{ article.title }}
+      </a>
+    </ul>
+    <!-- </div> -->
+  </div>
+</div>

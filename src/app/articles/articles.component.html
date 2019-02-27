@@ -1,0 +1,20 @@
+
+<div *ngFor="let article of articlesFromAPI">
+  This is title : {{article.title}} is from API!
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8 m-5" >
+      <app-today-pops [articles]="todayPops"></app-today-pops>
+    </div>
+    <div class="col-md-3 mt-5 pull-right">
+      <app-newest [articles]="articles"></app-newest>
+    </div>
+  </div>
+</div>
+<div class="container-fluid  p-3 mb-2 bg-dark">
+<div class="row m-5" >
+    <app-most-popular [articles]="allTimePops"></app-most-popular>
+  </div>
+</div>
