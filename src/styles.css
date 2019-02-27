@@ -17,18 +17,33 @@
 }
 
 .navbar-brand {
-    color: #fff !important;
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff !important;
+  font-size: 70px;
+  line-height: 50px;
+}
+
+#subtitle {
+  font-family: 'Open Sans',Arial, Helvetica, sans-serif;
+  text-transform: lowercase;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: right;
 }
 
 .card-body {
     overflow: hidden;
+    height:1px;
 }
 
 .card-header {
-    overflow:hidden; 
     /* font-size: 14px; */
     height: 5rem;
     /* overflow: hidden; */
+
+    white-space: wrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
 .card-title {
@@ -42,10 +57,12 @@
 }
 
 .most-popular-summary {        
-    white-space: nowrap; 
+    /* white-space: wrap !important;  */
     overflow: hidden; 
-    text-overflow: ellipsis;
-    width: 18rem;
+    text-overflow: clip;
+    /* width: 18rem; */
+
+    height: 100px;
   }
 
 .main-title {
